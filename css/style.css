@@ -1,22 +1,45 @@
+
+
+
+
 body{
   font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
+
+
 
 .header{
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
+  justify-content: space-between;
+
 }
 
+.logo-link {
+  transition: opasity 0.4s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.6;
+}
+
+
 .header-nav{
-  list-style-type: none;
+  /*list-style-type: none;*/
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style-type: none;
 }
+
 
 .section-2{
   align-items: center;
@@ -33,6 +56,16 @@ body{
   line-height: 15px;
   letter-spacing: 1px;
   color: #000000;
+  transition: color 0.4s ease,
+  opasity 0.4s ease;
+}
+
+.style-link:hover{
+  color: #FF7500;
+}
+
+.style-link:active{
+  opacity: 0.6;
 }
 
 .style-link-bottom{
@@ -43,8 +76,16 @@ body{
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.5px;
-
   color: #FFFFFF;
+  transition: opacity 0.4s ease;
+}
+
+.style-link-bottom:hover {
+   opacity: 0.8;
+}
+
+.style-link-bottom:active {
+  opacity: 0.6;
 }
 
 .hero{
@@ -156,6 +197,10 @@ body{
   width: 470px;
 }
 
+.icon:hover {
+  color: #FF7500;
+}
+
 .site-footer-top{
   display: flex;
   align-items: center;
@@ -174,8 +219,16 @@ body{
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
-
-
   color: #252420;
 
+
+}
+
+
+.style-link-footer:hover {
+  color: #FF7500;
+}
+
+.style-link-footer:active {
+  opacity: 0.6;
 }
