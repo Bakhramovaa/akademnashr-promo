@@ -23,6 +23,7 @@ body {
 
 .logo-link {
   transition: opasity 0.4s ease;
+  display: block;
 }
 
 .logo-link:hover {
