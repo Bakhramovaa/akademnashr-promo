@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
+  padding: 0%;
+  margin: 0%;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -11,13 +16,27 @@ body {
   outline-offset: 3px;
 }
 
-
 .header {
   border-top: 5px solid #FF7500;
   background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+}
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 
@@ -105,11 +124,15 @@ body {
 .hero {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: #252420;
+  color: #fff;
+}
+
+.hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 .hero-h2{
   color:#fff;
@@ -142,14 +165,24 @@ body {
 .section_2 {
   padding-top: 210px;
   padding-bottom: 210px;
-  padding: 0;
+
 }
 
 .section-2 {
-  align-items: center;
+  align-items: default;
   display: flex;
   list-style-type: none;
   margin-top: 0;
+
+}
+
+.section-2-div {
+  margin-right: 40px;
+
+}
+
+.section-2-div:last-child {
+  margin-right: 0;
 }
 
 
@@ -164,7 +197,7 @@ body {
   letter-spacing: 0.5px;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 72px;
+  margin-bottom: 204px;
 }
 .section-2-h3 {
   font-family: 'Roboto Condensed';
@@ -172,11 +205,10 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
-  /* identical to box height, or 29px */
-
   letter-spacing: 0.5px;
-
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 .section-2-p {
   font-family: 'Roboto';
@@ -187,17 +219,39 @@ body {
   /* or 24px */
 
   letter-spacing: 0.5px;
-
   color: #000000;
   width: 370px;
+
 }
 
+.style-img {
+  background-color: #ff77004b;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.main-2 {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
 
 .section-3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 12px;
+  background-color: #252420;
+  color: #fff
+}
+
+.section-3 div {
+  padding:
 }
 
 .section-3-h2 {
@@ -230,19 +284,8 @@ body {
   width: 470px;
 }
 
-.section-3-p2 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  /* or 24px */
-
-  letter-spacing: 0.5px;
-  margin-top: 0;
-  margin-bottom: 24px;
-  color: #FFFFFF;
-  width: 470px;
+strong {
+ color: #FF7500;
 }
 
 .kitoblar_rasmi {
@@ -259,7 +302,6 @@ body {
   display: block;
 
 }
-
 
 .icon:hover {
   color: #FF7500;
@@ -288,9 +330,10 @@ body {
   color: #252420;
   list-style-type: none;
   padding: 0;
-
+  margin-bottom: 16px;
 
 }
+
 
 .style-footer {
   list-style-type: none;
